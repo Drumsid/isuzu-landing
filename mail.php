@@ -15,8 +15,8 @@ $agree = htmlspecialchars($_POST["agree"]);
     
         if ( isset($_POST["mail"] )  && strlen(trim($_POST["mail"])) == 0 ) {
             // $to = "traffic@alliance-trucks.ru";
-            // $to = "den-sidnay@yandex.r123u";
             $to = "i.tulyakova@alliance-trucks.ru";
+            // $to = "den-sidnay@yandex.r123u";
             $subject = "Новая заявка с сайта Hyundai Landing " . $title;
             $message =
             "
