@@ -2992,6 +2992,13 @@ padding-left: 20px;
 
 }
 /* my media 10-11-2020 */
+.error-ms {
+    color: red;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+    margin-bottom: 10px;
+}
 sup {
     font-size: 10px;
 }
