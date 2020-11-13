@@ -1,0 +1,54 @@
+@font-face {
+	font-family: 'MazdaTypeCyrillic';
+	src: url('../fonts/MazdaTypeCyrillic-Bold.eot');
+	src: url('../fonts/MazdaTypeCyrillic-Bold.eot@') format('embedded-opentype'),
+		url('../fonts/MazdaTypeCyrillic-Bold.woff') format('woff'),
+		url('../fonts/MazdaTypeCyrillic-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MazdaTypeCyrillic';
+	src: url('../fonts/MazdaTypeCyrillic-BoldItalic.eot');
+	src: url('../fonts/MazdaTypeCyrillic-BoldItalic.eot@') format('embedded-opentype'),
+		url('../fonts/MazdaTypeCyrillic-BoldItalic.woff') format('woff'),
+		url('../fonts/MazdaTypeCyrillic-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'MazdaTypeCyrillic';
+	src: url('../fonts/MazdaTypeCyrillic-Italic.eot');
+	src: url('../fonts/MazdaTypeCyrillic-Italic.eot@') format('embedded-opentype'),
+		url('../fonts/MazdaTypeCyrillic-Italic.woff') format('woff'),
+		url('../fonts/MazdaTypeCyrillic-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'MazdaTypeCyrillic';
+	src: url('../fonts/MazdaTypeCyrillic-Medium.eot');
+	src: url('../fonts/MazdaTypeCyrillic-Medium.eot@') format('embedded-opentype'),
+		url('../fonts/MazdaTypeCyrillic-Medium.woff') format('woff'),
+		url('../fonts/MazdaTypeCyrillic-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MazdaTypeCyrillic';
+	src: url('../fonts/MazdaTypeCyrillic-MediumItalic.eot');
+	src: url('../fonts/MazdaTypeCyrillic-MediumItalic.eot@') format('embedded-opentype'),
+		url('../fonts/MazdaTypeCyrillic-MediumItalic.woff') format('woff'),
+		url('../fonts/MazdaTypeCyrillic-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'MazdaTypeCyrillic';
+	src: url('../fonts/MazdaTypeCyrillic-Regular.eot');
+	src: url('../fonts/MazdaTypeCyrillic-Regular.eot@') format('embedded-opentype'),
+		url('../fonts/MazdaTypeCyrillic-Regular.woff') format('woff'),
+		url('../fonts/MazdaTypeCyrillic-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}

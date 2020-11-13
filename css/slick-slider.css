@@ -1,0 +1,200 @@
+.slider-bg
+{
+    background: url("https://promo-mazda.ru/img/block.slider1.bg.jpg") center -100px no-repeat;
+    width: 100%;
+    height:859px;
+/*	margin-top: 95px;*/
+}
+
+.slider-bg img
+{
+	max-width:100%;
+}
+
+
+
+
+
+.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0;}
+.slick-track{position:relative;top:0;left:0;display:block;}
+
+
+
+/*PREV NEXT*/
+/* .slick-prev, .slick-next
+{
+	font-size:0;line-height:0;border:0px;
+	background:url("../img/slider.default.arrows.png") left top no-repeat;
+	width:44px;
+	height:44px;
+	position:absolute;
+	z-index:5;
+    top:50%;
+    outline: none;
+} */
+.slick-prev
+{
+    left:0px;
+    /* display: none !important; */
+}
+.slick-next
+{
+	right:0px;
+	background-position:-44px top;
+}
+.slick-prev:hover
+{
+	cursor:pointer;
+	background-position:0px -44px;
+}
+.slick-next:hover
+{
+	cursor:pointer;
+	background-position:-44px -44px;
+}
+
+
+
+
+
+/* DOTS */
+.slick-dots
+{
+    position: absolute;
+    bottom: 70px;
+    display: block;
+    width: 8%;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    z-index: 3;
+    right: 22%;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button
+{
+	content:'';
+	font-size: 0px;
+	line-height: 0;
+	display: inline-block;
+	cursor: pointer;
+	color: transparent;
+	background: #414141;
+	max-width:8px;
+	padding:0px;margin:0px;border: 0;outline: none;
+	border:1px solid #414141;
+	width:8px;height:8px;
+	border-radius:6px;
+}
+
+.slick-dots li.slick-active button
+{
+    background-color:#bb162b;
+    border:1px solid #bb162b;
+}
+
+@media (max-width: 992px) {
+    .slick-dots
+{
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 3;
+    right: -5%;
+}
+}
+
+@media (max-width: 767px) {
+    .slick-dots
+{
+    position: absolute;
+    bottom: -10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 3;
+    right: -5%;
+}
+}
+
+
+
+
+/* TEXT */
+.slider-text
+{
+    font-size: 37px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    padding-top:10px;
+}
+.slider-text div {}
+.slider-text span {color: #bb162b;}
+.slider-text div:nth-child(1)
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.slider-text div:nth-child(2)
+{
+    font-size: 44px;
+    font-weight: bold;
+}
+.slider-text div:nth-child(3)
+{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.timer_head 
+{
+	font-size: 26px;
+	color: #fff;
+	z-index: 1000;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.timer_head strong {}
+.timer_head b {font-size: 40px;}
+.timer_head a {
+    max-width: 300px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex !important;
+    margin-top: 10px;
+}
+
+.timer
+{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
