@@ -1444,8 +1444,8 @@ padding-left: 20px;
 /* about */
 
 .about_bg {
-    /* background: url(../img/botob-bg.jpg) center no-repeat; */
-    background-color: #000;
+    background: url(../img/darkIsuzu70.jpg) center no-repeat;
+    /* background-color: #000; */
 }
 
 .about_bg .container {
