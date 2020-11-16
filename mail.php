@@ -16,8 +16,11 @@ $agree = htmlspecialchars($_POST["agree"]);
         if ( isset($_POST["mail"] )  && strlen(trim($_POST["mail"])) == 0 ) {
             // $to = "traffic@alliance-trucks.ru";
             // $to = "den-sidnay@yandex.ru";
-            $to = "i.tulyakova@alliance-trucks.ru";
-            $subject = "Новая заявка с сайта Hyundai Landing " . $title;
+            // $to = "i.tulyakova@alliance-trucks.ru";
+            // $to = "d.solodukhin@alliance-trucks.ru";
+            // $to = "n.filatova@alliance-trucks.ru";
+            $to = "n.lukyanenko@alliance-trucks.ru";
+            $subject = "Новая заявка с сайта ISUZU Landing " . $title;
             $message =
             "
             Клиент заполнил форму <strong>\"" . $title . "\"</strong> и оставил номер телефона: $phone;<br>
@@ -26,8 +29,8 @@ $agree = htmlspecialchars($_POST["agree"]);
 
 
             $headers =
-            'From: Новая заявка с сайта Hyundai Landing ' . "\r\n" .
-            'Reply-To: Hyundai@hyundai.ru' . "\r\n" .
+            'From: info@at-test.ru' . "\r\n" .
+            'Reply-To: info@at-test.ru' . "\r\n" .
             'Content-Type: text/html; charset=utf-8' . "\r\n" .
             'Content-Transfer-Encoding: 8bit' . "\r\n";
 
