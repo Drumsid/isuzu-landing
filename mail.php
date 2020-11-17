@@ -20,7 +20,7 @@ $agree = htmlspecialchars($_POST["agree"]);
             // $to = "d.solodukhin@alliance-trucks.ru";
             // $to = "n.filatova@alliance-trucks.ru";
             $to = "n.lukyanenko@alliance-trucks.ru";
-            $subject = "Новая заявка с сайта ISUZU Landing " . $title;
+            $subject = "Новая заявка с сайта http://at-isuzu.ru ISUZU Landing " . $title;
             $message =
             "
             Клиент заполнил форму <strong>\"" . $title . "\"</strong> и оставил номер телефона: $phone;<br>

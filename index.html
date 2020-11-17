@@ -16,6 +16,7 @@
 	<link href="css/fonts.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+	<link rel="stylesheet" href="lib/lightbox/css/lightbox.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
 
 
@@ -144,6 +145,7 @@
 
 		<!-- swiper slider -->
 		<div class="slick-wrap">
+			<h2 id="isuzu-modifications">Возможные модификации</h2>
 			<div class="sliderSlick">
 				<div>
 					<a class="popup" href="#form_popup" data-title="Изотермический фургон">
@@ -328,7 +330,7 @@
 				<div class="car_item isuzu_nqr" id="isuzu_nqr">
 					<div class="container">
 						<div class="img_container">
-							<div class="car_name">
+							<div class="car_name" id="isuzu-forward">
 								ISUZU FSR34P
 								<br><span>
 									<span class="profit_count"></span>
@@ -523,7 +525,7 @@
 				<div class="car_item isuzu_nqr" id="isuzu_nqr">
 					<div class="container">
 						<div class="img_container">
-							<div class="car_name">
+							<div class="car_name" id="isuzu-elf">
 								ISUZU NMR85H
 								<br><span>
 									<span class="profit_count"></span>
@@ -590,7 +592,6 @@
 					</div>
 				</div>
 			</div><!-- NMR cars_items end -->
-			<!-- <div class="cars_items"> -->
 
 
 		</div>
@@ -607,48 +608,14 @@
 	<div class="about_bg">
 		<div class="container">
 			<div class="about">
-				<div class="about_title">
+				<div class="about_title" id="isuzu-advantages">
 					ПРЕИМУЩЕСТВА ПОКУПКИ В<br>
 					АЛЬЯНС ТРАКС
 				</div>
-				<!-- <ul class="about_list">
-					<li>
-						<a class="popup" href="#form_popup"
-						data-title="Гарантия надежности"
-						data-comment=""
-						data-form_name="zakaz_zvonka_fancybox"
-						data-form_type_model_name=""
-						data-form_diler="ISUZU">
-						<span>Гарантия надежности</span><br>Компания АВТОМИР основана в 1993 году.
-						</a>
-					</li>
-					<li>
-						<a class="popup" href="#form_popup"
-						data-title="Крупная торговая сеть"
-						data-comment=""
-						data-form_name="zakaz_zvonka_fancybox"
-						data-form_type_model_name=""
-						data-form_diler="ISUZU">
-						<span>Крупная торговая сеть</span><br>16 московских дилерских центров: 
-						еще 7 региональных в России и 3 в Казахстане.
-						</a>
-					</li>
-					<li>
-						<a class="popup" href="#form_popup"
-						data-title="Надежный партнер"
-						data-comment=""
-						data-form_name="zakaz_zvonka_fancybox"
-						data-form_type_model_name=""
-						data-form_diler="ISUZU">
-						<span>Надежный партнер</span><br>72 143 автолюбителей выбрали АВТОМИР 
-						в 2019 году.
-						</a>
-					</li>
-				</ul> -->
+			
 				<div class="adds">
 					<div class="item-wrap">
 						<div class="item-img-wrapp">
-							<!-- <img class="dva" src="/img/adds_ico_1.png" alt=""> -->
 							<img class="" src="/img/adds_ico_1.png" alt="">
 						</div>
 						<a class="popup item" href="#form_popup" data-title="Более 6 лет Альянс Тракс" data-comment=""
@@ -706,31 +673,7 @@
 							3 сервисных центра
 						</a>
 					</div>
-					<!-- <a class="popup item" href="#form_popup" data-title="Выгодный обмен по Трейд-ин" data-comment="" data-form_name=""
-						data-form_type_model_name="" data-form_diler="">
-						Гарантия 3 года или 300 000 км
-					</a>
-					<a class="popup item" href="#form_popup" data-title="Выгодные кредитные условия" data-comment="" data-form_name=""
-						data-form_type_model_name="" data-form_diler="">
-						Выгодный обмен по Trade-in, комиссия
-					</a>
-					<a class="popup item" href="#form_popup" data-title="3 года гарантии" data-comment="" data-form_name=""
-						data-form_type_model_name="" data-form_diler="">
-						Широкий выбор надстроек под задачи Вашего бизнеса
-					</a>
-					<a class="popup item" href="#form_popup" data-title="Автомобили в наличии с ПТС" data-comment="" data-form_name=""
-						data-form_type_model_name="" data-form_diler="">
-						Спец. условия для корпоративных клиентов
-					</a>
-					<a class="popup item" href="#form_popup" data-title="Сервисное обслуживание в день обращения" data-comment=""
-						data-form_name="" data-form_type_model_name="" data-form_diler="">
-						3 сервисных центра
-					</a> -->
 				</div>
-				<!-- <div class="about_comment">
-					Мы всегда рады Вам помочь <br>
-					и ответить на любые ваши вопросы!
-				</div> -->
 			</div>
 		</div>
 	</div>
@@ -738,31 +681,26 @@
 	<!-- end about -->
 
 	<div class="cont_images">
-		<a class="popup cont_img_item" href="#form_popup" data-title="Оставить заявку" data-comment=""
-			data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="" data-form_diler="ISUZU">
+		<a class="cont_img_item" href="img/gal1.jpg" data-lightbox="roadtrip" >
 			<img src="img/gal1.jpg">
 		</a>
-		<a class="popup cont_img_item" href="#form_popup" data-title="Оставить заявку" data-comment=""
-			data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="" data-form_diler="ISUZU">
+		<a class="cont_img_item" href="img/gal2.jpg" data-lightbox="roadtrip" >
 			<img src="img/gal2.jpg">
 		</a>
-		<a class="popup cont_img_item" href="#form_popup" data-title="Оставить заявку" data-comment=""
-			data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="" data-form_diler="ISUZU">
+		<a class="cont_img_item" href="img/gal3.jpg" data-lightbox="roadtrip" >
 			<img src="img/gal3.jpg">
 		</a>
-		<a class="popup cont_img_item" href="#form_popup" data-title="Оставить заявку" data-comment=""
-			data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="" data-form_diler="ISUZU">
+		<a class="cont_img_item" href="img/gal4.jpg" data-lightbox="roadtrip" >
 			<img src="img/gal4.jpg">
 		</a>
-		<a class="popup cont_img_item" href="#form_popup" data-title="Оставить заявку" data-comment=""
-			data-form_name="zakaz_zvonka_fancybox" data-form_type_model_name="" data-form_diler="ISUZU">
+		<a class="cont_img_item" href="img/gal5.jpg" data-lightbox="roadtrip" >
 			<img src="img/gal5.jpg">
 		</a>
 	</div>
 
 	<div class="contacts_bg">
 		<div class="container">
-							<div class="contacts_title">
+							<div class="contacts_title" id="isuzu-contacts">
 								Контакты
 							</div>
 			<div class="contacts">
@@ -838,9 +776,6 @@
 
 	<div class="disclamer_bg">
 		<div class="container">
-			<!-- <div class="information_text">
-				<a class="information" href="#!" target="_blank">Правовая информация</a>
-			</div> -->
 			<script>
 				$(function () {
 					$('.disclamer_switch').click(function (event) {
@@ -976,7 +911,7 @@
 				с использованием интернет-сервисов Google analytics, Яндекс.Метрика, LiveInternet, Рейтинг
 				Mail.ru, Google Doubleclick в соответствии со следующим перечнем:
 				– фамилия, имя и условия заказа в случае его оформления;
-				– источник захода на сайт http:// и информация поискового или рекламного
+				– источник захода на сайт http://at-isuzu.ru и информация поискового или рекламного
 				запроса;
 				– данные о пользовательском устройстве (среди которых разрешение, версия и другие атрибуты,
 				характеризующие пользовательское устройство);
@@ -1005,8 +940,6 @@
 	<style>
 		.tab-content__item {
 			display: none;
-			/* padding: 20px; */
-			/* border: 1px solid red; */
 			}
 
 			/* Стили для активного контейнера вкладки */
@@ -1025,6 +958,7 @@
 
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script src="lib/lightbox/js/lightbox.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('.sliderSlick').slick({
@@ -1072,9 +1006,6 @@
 		$('.bottom_addr').click(function () {
 				var id = $(this).attr('data-tab'),
 					content = $('.js-tab-content[data-tab="' + id + '"]');
-
-				// $('.js-tab-trigger.active').removeClass('active');
-				// $(this).addClass('active');
 
 				$('.js-tab-content.active').removeClass('active');
 				content.addClass('active');
