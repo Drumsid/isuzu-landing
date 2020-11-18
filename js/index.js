@@ -114,9 +114,10 @@ function initFancy() {
 function initForm() {
 
 
-    $("body").on("submit", "form", function () {
-
+    $("body").on("submit", "form", function (e) {
+        e.preventDefault();
         var l_form_object = $(this);
+        console.log(l_form_object);
 
         _form_title = $("input[name='title']", this).val();
         _form_comment = $("input[name='comment']", this).val();
@@ -125,7 +126,8 @@ function initForm() {
         _form_diler = $("input[name='form_diler']", this).val();
 
         _email = $("input[name='email']", this).val();
-
+        let inputPhone = $("input[name='phone']", this);
+        console.log(inputPhone);
 
         $("input[name='form_name']", this).val(_form_title);
 
@@ -151,10 +153,19 @@ function initForm() {
                 if (! resInput) {                   
                     l_err = true;
                         let errMsg = document.querySelectorAll('.error-ms');
-                         errMsg[1].style.display = 'block';
-                         setTimeout(function(){
-                             errMsg[1].style.display = 'none';
-                         }, 2000);
+                        // console.log(errMsg);
+                        if (errMsg.length) {
+                            for (let i = 0; i < errMsg.length; i++) {
+                                const element = errMsg[i];
+                                element.style.display = 'block';
+                                inputPhone.focus();
+                                setTimeout(function(){
+                                   element.style.display = 'none';
+                                }, 2000);
+                                
+                            }
+                        }
+                        
                         
                     $(this).closest(".form-group").addClass("has-danger");
                 } //end_ if
