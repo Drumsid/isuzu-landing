@@ -1,4 +1,5 @@
 // let l_err;
+let _form_title;
 function initFancy() {
 
     $(".fancybox-gallery").fancybox({
@@ -16,7 +17,7 @@ function initFancy() {
     $(".popup").click(function () {
         var _form_id = $(this).attr('href');
 
-        var _form_title = $(this).data('title');
+        _form_title = $(this).data('title');
         var _form_comment = $(this).data('comment');
         var _form_name = $(this).data('form_name');
         var _form_type_model_name = $(this).data('form_type_model_name');
@@ -119,7 +120,7 @@ function initForm() {
         var l_form_object = $(this);
         // console.log(l_form_object);
 
-        _form_title = $("input[name='title']", this).val();
+        // _form_title = $("input[name='title']", this).val();
         _form_comment = $("input[name='comment']", this).val();
         _form_name = $("input[name='form_name']", this).val();
         _form_type_model_name = $("input[name='form_type_model_name']", this).val();
@@ -252,9 +253,9 @@ function initForm() {
 
 
             //ckForms.send( '#'+l_form_object.attr("name") );
-            
+            console.log(_form_title);
             window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ 'event' : _form_name,'formName': _form_title});
+            window.dataLayer.push({ 'event' : 'at-isuzu-submit','formName': _form_title});
 
             $('form').trigger('reset');
             
