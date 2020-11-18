@@ -1,12 +1,5 @@
 <?php
 
-
-
-// echo "<pre>";
-// print_r($_POST);
-// echo "</pre>";
-
-
 $mailSpam = htmlspecialchars(trim($_POST["mail"]));
 
 $title = htmlspecialchars($_POST["title"]);
@@ -14,19 +7,11 @@ $phone = htmlspecialchars($_POST["phone"]);
 $agree = htmlspecialchars($_POST["agree"]);
     
         if ( isset($_POST["mail"] )  && strlen(trim($_POST["mail"])) == 0 ) {
-            // $to = "traffic@alliance-trucks.ru";
-            // $to = "den-sidnay@yandex.ru";
-            // $to = "i.tulyakova@alliance-trucks.ru";
-            // $to = "d.solodukhin@alliance-trucks.ru";
-            // $to = "n.filatova@alliance-trucks.ru";
-            $to = "n.lukyanenko@alliance-trucks.ru";
+            $to = "traffic@alliance-trucks.ru";
             $subject = "Новая заявка с сайта http://at-isuzu.ru ISUZU Landing " . $title;
             $message =
-            "
-            Клиент заполнил форму <strong>\"" . $title . "\"</strong> и оставил номер телефона: $phone;<br>
-            Надо перезвонить!!!
-            ";
-
+            "Клиент заполнил форму <strong>\"" . $title . "\"</strong> и оставил номер телефона: $phone;<br>
+            Надо перезвонить!!!";
 
             $headers =
             'From: info@at-test.ru' . "\r\n" .
@@ -45,7 +30,3 @@ $agree = htmlspecialchars($_POST["agree"]);
             echo 0;
             die(0);  
         }
-//     } else {
-//         echo 2;
-//     }
-// }
