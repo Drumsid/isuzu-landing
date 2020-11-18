@@ -252,6 +252,10 @@ function initForm() {
 
 
             //ckForms.send( '#'+l_form_object.attr("name") );
+            
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ 'event' : _form_name,'formName': _form_title});
+
             $('form').trigger('reset');
             
         });
