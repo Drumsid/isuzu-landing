@@ -14,8 +14,8 @@ $agree = htmlspecialchars($_POST["agree"]);
             Надо перезвонить!!!";
 
             $headers =
-            'From: info@at-test.ru' . "\r\n" .
-            'Reply-To: info@at-test.ru' . "\r\n" .
+            'From: info@at-isuzu.ru' . "\r\n" .
+            'Reply-To: info@at-isuzu.ru' . "\r\n" .
             'Content-Type: text/html; charset=utf-8' . "\r\n" .
             'Content-Transfer-Encoding: 8bit' . "\r\n";
 
