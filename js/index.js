@@ -117,7 +117,7 @@ function initForm() {
     $("body").on("submit", "form", function (e) {
         e.preventDefault();
         var l_form_object = $(this);
-        console.log(l_form_object);
+        // console.log(l_form_object);
 
         _form_title = $("input[name='title']", this).val();
         _form_comment = $("input[name='comment']", this).val();
@@ -127,7 +127,7 @@ function initForm() {
 
         _email = $("input[name='email']", this).val();
         let inputPhone = $("input[name='phone']", this);
-        console.log(inputPhone);
+        // console.log(inputPhone);
 
         $("input[name='form_name']", this).val(_form_title);
 
@@ -137,7 +137,7 @@ function initForm() {
         l_form_title = _form_title;
 
         var l_phone = $.trim($(this).find("input[name=phone]").val());
-        console.log(l_phone);
+        // console.log(l_phone);
         let patternp = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){11,14}(\s*)?$/;
         let resInput = patternp.test(l_phone);
 
@@ -232,12 +232,12 @@ function initForm() {
 
         $.post("mail.php", $(this).serialize(), function (data) {
 
-            console.log('form_site :' + window.location.href);
-            console.log('form_name :' + _form_name);
-            console.log('form_type_model_name :' + _form_type_model_name);
-            console.log('form_diler :' + _form_diler);
-            console.log('form_action :' + 'send_form');
-            console.log('event :' + 'event_ok');
+            // console.log('form_site :' + window.location.href);
+            // console.log('form_name :' + _form_name);
+            // console.log('form_type_model_name :' + _form_type_model_name);
+            // console.log('form_diler :' + _form_diler);
+            // console.log('form_action :' + 'send_form');
+            // console.log('event :' + 'event_ok');
 
             //			dataLayer.push({
             //				'form_site': window.location.href, // динамически подставлять URL страницы и домен сайта
