@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<link rel="icon" href="favicon1.ico">
 
-	<title></title>
+	<title>Официальный дилер ISUZU</title>
 
 	<!-- JAVASCRIPT -->
 	<script type="text/javascript" src="https://yastatic.net/jquery/1.12.3/jquery.min.js"></script>
@@ -1034,38 +1034,40 @@
 			});
 
 	</script>
-	<!-- calltouch -->
-	<script type="text/javascript">
-		(function (w, d, n, c) { w.CalltouchDataObject = n; w[n] = function () { w[n]["callbacks"].push(arguments) }; if (!w[n]["callbacks"]) { w[n]["callbacks"] = [] } w[n]["loaded"] = false; if (typeof c !== "object") { c = [c] } w[n]["counters"] = c; for (var i = 0; i < c.length; i += 1) { p(c[i]) } function p(cId) { var a = d.getElementsByTagName("script")[0], s = d.createElement("script"), i = function () { a.parentNode.insertBefore(s, a) }; s.type = "text/javascript"; s.async = true; s.src = "https://mod.calltouch.ru/init.js?id=" + cId; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", i, false) } else { i() } } })(window, document, "ct", "98lhlulb");
-	</script>
-	<!-- calltouch -->
-	
-	<!-- calltouch requests -->
-	<script type="text/javascript">
-		jQuery(document).on('click', 'form button[type="submit"]', function () {
-			var m = jQuery(this).closest('form');
-			var phone = m.find('input[name="phone"]').val();
-			var sub = m.find('input[name="title"]').val();
-			var ct_site_id = '39874';
-			var ct_callback_key = 'form_at_isuzu';
+<!-- calltouch -->
+<script type="text/javascript">
+	(function (w, d, n, c) { w.CalltouchDataObject = n; w[n] = function () { w[n]["callbacks"].push(arguments) }; if (!w[n]["callbacks"]) { w[n]["callbacks"] = [] } w[n]["loaded"] = false; if (typeof c !== "object") { c = [c] } w[n]["counters"] = c; for (var i = 0; i < c.length; i += 1) { p(c[i]) } function p(cId) { var a = d.getElementsByTagName("script")[0], s = d.createElement("script"), i = function () { a.parentNode.insertBefore(s, a) }; s.type = "text/javascript"; s.async = true; s.src = "https://mod.calltouch.ru/init.js?id=" + cId; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", i, false) } else { i() } } })(window, document, "ct", ["98lhlulb", "6s9a2ym2"]);
+</script>
+<!-- calltouch -->
 
-			var ct_data = {
-				phoneNumber: phone,
-				subject: sub,
-				requestUrl: location.href,
-				sessionId: window.call_value
-			};
-			if (!!phone) {
-				var phone_ct = phone.replace(/[^0-9]/gim, '');
-				if (phone_ct != '') {
-					if (phone_ct[0] == '8') { phone_ct = phone_ct.substring(1); }
-					if (phone_ct[0] == '7') { phone_ct = phone_ct.substring(1); }
-					phone_ct = '7' + phone_ct;
-					window.ctw.createRequest(ct_callback_key, phone_ct, [{ "name": "Форма", "value": sub }], function (success, data) { console.log(success, data) });
-				}
+<!-- calltouch requests -->
+<script type="text/javascript">
+	jQuery(document).on('click', 'form button[type="submit"]', function () {
+		var m = jQuery(this).closest('form');
+		var phone = m.find('input[name="phone"]').val();
+		var sub = m.find('input[name="title"]').val();
+		var ct_site_id = '40451';
+		var ct_callback_key = 'form_at_isuzu';
+
+		var ct_data = {
+			phoneNumber: phone,
+			subject: sub,
+			requestUrl: location.href,
+			sessionId: window.call_value_6s9a2ym2
+		};
+		if (!!phone) {
+			var phone_ct = phone.replace(/[^0-9]/gim, '');
+			if (phone_ct != '') {
+				if (phone_ct[0] == '8') { phone_ct = phone_ct.substring(1); }
+				if (phone_ct[0] == '7') { phone_ct = phone_ct.substring(1); }
+				phone_ct = '7' + phone_ct;
+				window.ctw.createRequest(ct_callback_key, phone_ct, [{ "name": "Форма", "value": sub }], function (success, data) { console.log(success, data) });
 			}
-		});
-	</script>
+		}
+	});
+</script>
+<!-- calltouch requests -->
+
 </body>
 
 </html>
