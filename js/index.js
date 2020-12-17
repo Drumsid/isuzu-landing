@@ -120,7 +120,7 @@ function initForm() {
         var l_form_object = $(this);
         // console.log(l_form_object);
 
-        // _form_title = $("input[name='title']", this).val();
+        _form_title = $("input[name='title']", this).val();
         _form_comment = $("input[name='comment']", this).val();
         _form_name = $("input[name='form_name']", this).val();
         _form_type_model_name = $("input[name='form_type_model_name']", this).val();
