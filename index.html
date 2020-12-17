@@ -1048,13 +1048,19 @@
 		var sub = m.find('input[name="title"]').val();
 		var ct_site_id = '40451';
 		var ct_callback_key = 'form_at_isuzu';
-
 		var ct_data = {
 			phoneNumber: phone,
 			subject: sub,
 			requestUrl: location.href,
 			sessionId: window.call_value_6s9a2ym2
 		};
+		if (!!phone) {
+			console.log(ct_data);
+			jQuery.ajax({
+				url: 'https://api.calltouch.ru/calls-service/RestAPI/requests/' + ct_site_id + '/register/',
+				dataType: 'json', type: 'POST', data: ct_data, async: false
+			});
+		}
 		if (!!phone) {
 			var phone_ct = phone.replace(/[^0-9]/gim, '');
 			if (phone_ct != '') {
